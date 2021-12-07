@@ -1,0 +1,22 @@
+body {
+  height: 100%;
+  background-color: $mainBackgrColor;
+  font-family: RedHatDisplay;
+  font-size: $subFontSize;
+  color: $subBlackColor;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}

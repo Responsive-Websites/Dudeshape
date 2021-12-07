@@ -1,0 +1,47 @@
+.header {
+  background-color: $beigeColor;
+  padding: 54px 0px;
+
+  &__inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    font-size: $subFontThemeSize;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration-line: underline;
+    color: $subBlackColor;
+    line-height: 125%;
+  }
+  &__nav {
+  }
+  &__icons {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__iconLink {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+.header-nav {
+  &__list {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  &__link {
+    color: inherit;
+    font-size: $navFontSize;
+    line-height: 125%;
+  }
+}
