@@ -3,6 +3,8 @@
   }
   &__partners {
   }
+  &__product {
+  }
 }
 
 // entry block
@@ -202,6 +204,242 @@
       }
       & img {
         width: 50px;
+      }
+    }
+  }
+}
+
+// --------------------------------------- //
+
+// partners block
+
+.product {
+  &__container {
+  }
+  &__heading {
+    @media screen and (max-width: 900px) {
+      & h2 {
+        font-size: 48px;
+      }
+    }
+    @media screen and (max-width: 769px) {
+      & h2 {
+        font-size: 38px;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 481px) {
+      & h2 {
+        font-size: 30px;
+      }
+    }
+  }
+  &__info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+      & {
+        display: block;
+      }
+    }
+  }
+  &__text {
+    max-width: 714px;
+    @media screen and (max-width: 769px) {
+      & {
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 481px) {
+      & {
+        font-size: 16px;
+      }
+    }
+  }
+  &__link {
+    font-size: $subFontThemeSize;
+    line-height: 125%;
+    font-weight: 500;
+    color: inherit;
+    &::after {
+      content: "";
+      padding-right: 40px;
+      width: 50px;
+      height: 50px;
+      background: url("../img/icons/product/arrow.svg") center no-repeat;
+    }
+    @media screen and (max-width: 1024px) {
+      & {
+        display: block;
+        text-align: center;
+        margin: 30px 0px 0px 0px;
+      }
+    }
+    @media screen and (max-width: 769px) {
+      & {
+        font-size: 18px;
+      }
+    }
+  }
+  &__examples {
+    margin: 60px 0px 130px 0px;
+    display: flex;
+    @media screen and (max-width: 769px) {
+      & {
+        margin: 40px 0px 70px 0px;
+      }
+    }
+    @media screen and (max-width: 680px) {
+      & {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  &__example {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+.example {
+  flex: 0 1 50%;
+  @media screen and (max-width: 680px) {
+    & {
+      display: block;
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__image {
+    display: block;
+    padding: 0px 0px 100% 0px;
+    @media screen and (max-width: 680px) {
+      & {
+        padding: 0px 0px 50% 0px;
+      }
+    }
+  }
+  &__info {
+    border-bottom: 1px solid #e3e0df;
+    border-right: 1px solid #e3e0df;
+    border-left: 1px solid #e3e0df;
+
+    padding: 20px 32px 32px 32px;
+  }
+  &__name {
+    font-size: $productFontSize;
+    font-weight: 500;
+    line-height: 150%;
+    @media screen and (max-width: 900px) {
+      & {
+        font-size: 30px;
+      }
+    }
+    @media screen and (max-width: 769px) {
+      & {
+        font-size: 25px;
+      }
+    }
+    @media screen and (max-width: 481px) {
+      & {
+        font-size: 23px;
+      }
+    }
+  }
+  &__description {
+    margin: 16px 0px 47px 0px;
+    max-width: 516px;
+    @media screen and (max-width: 769px) {
+      & {
+        font-size: 16px;
+      }
+    }
+    @media screen and (max-width: 481px) {
+      & {
+        font-size: 14px;
+        margin: 16px 0px 27px 0px;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1044px) {
+      & {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    @media screen and (max-width: 1044px) {
+      & {
+        justify-content: center;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      & {
+        display: block;
+      }
+    }
+  }
+  &__buyButton {
+    margin-right: 24px;
+    @media screen and (max-width: 900px) {
+      & {
+        display: block;
+        margin-right: 0px;
+      }
+    }
+  }
+  &__buy {
+  }
+  &__cartButton {
+    background-color: #ffffff;
+    border: 1px solid $brownColor;
+    color: $brownColor;
+    &:hover {
+      background-color: $brownColor;
+      outline: none;
+      color: #ffffff;
+    }
+    @media screen and (max-width: 900px) {
+      & {
+        display: block;
+        margin: 20px 0px 0px 0px;
+      }
+    }
+  }
+  &__cart {
+    color: inherit;
+  }
+  &__price {
+    font-size: 30px;
+    line-height: 106%;
+    font-weight: 500;
+    padding-left: 20px;
+    @media screen and (max-width: 1044px) {
+      & {
+        font-size: 40px;
+        padding: 0px 0px 0px 0px;
+        margin-top: 20px;
+      }
+    }
+    @media screen and (max-width: 481px) {
+      & {
+        font-size: 30px;
+        padding: 0px 0px 0px 0px;
+        margin-top: 20px;
       }
     }
   }
