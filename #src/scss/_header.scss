@@ -2,11 +2,22 @@
   background-color: $beigeColor;
   padding: 54px 0px;
 
+  @media screen and (max-width: 769px) {
+    & {
+      padding: 20px 0px 34px 0px;
+    }
+  }
   &__inner {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 769px) {
+      & {
+        flex-flow: column nowrap;
+      }
+    }
   }
   &__logo {
     font-size: $subFontThemeSize;
@@ -15,6 +26,11 @@
     text-decoration-line: underline;
     color: $subBlackColor;
     line-height: 125%;
+    @media screen and (max-width: 769px) {
+      & {
+        margin-bottom: 20px;
+      }
+    }
   }
   &__nav {
   }
@@ -33,10 +49,19 @@
   &__list {
     display: flex;
     flex-flow: row nowrap;
+    @media screen and (max-width: 769px) {
+      & {
+        margin-bottom: 25px;
+      }
+    }
   }
   &__item {
     &:not(:last-child) {
       margin-right: 40px;
+    }
+    transition: 0.5s;
+    &:hover {
+      color: $brownColor;
     }
   }
   &__link {
