@@ -277,3 +277,13 @@ body {
     margin-bottom: 25px;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .header-nav__item:not(:last-child) {
+    margin-right: 22px;
+  }
+
+  .header-nav__link {
+    font-size: 14px;
+  }
+}
