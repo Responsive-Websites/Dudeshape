@@ -1,0 +1,122 @@
+.page {
+  &__entry {
+  }
+}
+
+// entry block
+.entry {
+  background-color: $beigeColor;
+  &__container {
+  }
+  &__body {
+    background: url("../img/pages/main-block/mainBack.png") top right no-repeat;
+    @media screen and (max-width: 1025px) {
+      & {
+        background: url("../img/pages/main-block/mainBack.png") center / contain no-repeat;
+      }
+    }
+  }
+  &__inner {
+    @media screen and (max-width: 769px) {
+      & {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  &__heading {
+    padding: 55px 0px 30px 0px;
+    max-width: 620px;
+
+    @media screen and (max-width: 769px) {
+      & {
+        margin: 35px 0px 40px 0px;
+        font-size: 49px;
+        max-width: none;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 481px) {
+      & {
+        padding: 35px 0px 40px 0px;
+        margin: 0px 0px 0px 0px;
+        font-size: 40px;
+        max-width: none;
+        text-align: center;
+      }
+    }
+  }
+  &__text {
+    max-width: 516px;
+    margin: 0px 0px 30px 0px;
+
+    @media screen and (max-width: 769px) {
+      & {
+        margin: 0 auto 30px auto;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 481px) {
+      & {
+        font-size: 16px;
+      }
+    }
+  }
+  &__form {
+    margin: 0px 0px 60px 0px;
+    @media screen and (max-width: 769px) {
+      & {
+        padding: 11px 8px;
+        margin: 0 30px 20px 30px;
+        max-width: none;
+      }
+    }
+  }
+  &__shopButton {
+    @media screen and (max-width: 769px) {
+      & {
+        margin: 0px 30px 70px 30px;
+      }
+    }
+  }
+  &__image {
+  }
+  &__arrows {
+    display: flex;
+    padding: 49px 0px;
+    max-width: 145px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    @media screen and (max-width: 769px) {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__arrow {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.inputForm {
+  &__input {
+  }
+  &__button {
+  }
+}
+.button {
+  transition: 0.5s;
+  &__link {
+  }
+  &:hover {
+    background-color: $beigeColor;
+    outline: 1px solid $brownColor;
+    color: $brownColor;
+  }
+}
+
+// --------------------------------------- //
