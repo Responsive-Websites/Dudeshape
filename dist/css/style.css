@@ -370,9 +370,49 @@ body {
   color: #402f2c;
 }
 
+.partners__body {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin: 130px 32px;
+  padding: 41px 0px;
+}
+
+.partners__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (max-width: 1025px) {
   .entry__body {
     background: url("../img/pages/main-block/mainBack.png") center/contain no-repeat;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .partners__body {
+    padding: 10px 20px;
+    margin: 40px 52px;
+  }
+
+  .partners__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .partners__item {
+    min-width: 200px;
+    margin: 20px 0px;
+    text-align: center;
   }
 }
 
@@ -433,6 +473,25 @@ body {
   }
 }
 
+@media screen and (max-width: 577px) {
+  .partners__body {
+    padding: 10px 20px;
+    margin: 40px 12px;
+  }
+
+  .partners__items {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .partners__item {
+    min-width: 130px;
+    margin: 20px 10px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 481px) {
   .entry__heading {
     padding: 35px 0px 40px 0px;
@@ -454,6 +513,35 @@ body {
 
   .header-nav__link {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .partners__body {
+    padding: 10px 20px;
+    margin: 20px 12px;
+  }
+
+  .partners__item {
+    min-width: 57px;
+    margin: 10px 10px;
+    text-align: center;
+  }
+
+  .partners__item img {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .partners__item {
+    min-width: 50px;
+    margin: 10px 10px;
+    text-align: center;
+  }
+
+  .partners__item img {
+    width: 50px;
   }
 }
 

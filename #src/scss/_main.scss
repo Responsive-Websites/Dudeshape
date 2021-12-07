@@ -1,9 +1,12 @@
 .page {
   &__entry {
   }
+  &__partners {
+  }
 }
 
 // entry block
+
 .entry {
   background-color: $beigeColor;
   &__container {
@@ -101,7 +104,6 @@
     }
   }
 }
-
 .inputForm {
   &__input {
   }
@@ -116,6 +118,92 @@
     background-color: $beigeColor;
     outline: 1px solid $brownColor;
     color: $brownColor;
+  }
+}
+
+// --------------------------------------- //
+
+// partners block
+
+.partners {
+  &__container {
+  }
+  &__body {
+    border-top: 1px solid $linesGrayColor;
+    border-bottom: 1px solid $linesGrayColor;
+    margin: 130px 32px;
+    padding: 41px 0px;
+    @media screen and (max-width: 900px) {
+      & {
+        padding: 10px 20px;
+        margin: 40px 52px;
+      }
+    }
+    @media screen and (max-width: 577px) {
+      & {
+        padding: 10px 20px;
+        margin: 40px 12px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      & {
+        padding: 10px 20px;
+        margin: 20px 12px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 900px) {
+      & {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    @media screen and (max-width: 577px) {
+      & {
+        justify-content: space-between;
+      }
+    }
+  }
+  &__item {
+    @media screen and (max-width: 900px) {
+      & {
+        min-width: 200px;
+        margin: 20px 0px;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 577px) {
+      & {
+        min-width: 130px;
+        margin: 20px 10px;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      & {
+        min-width: 57px;
+        margin: 10px 10px;
+        text-align: center;
+      }
+      & img {
+        width: 50px;
+      }
+    }
+    @media screen and (max-width: 327px) {
+      & {
+        min-width: 50px;
+        margin: 10px 10px;
+        text-align: center;
+      }
+      & img {
+        width: 50px;
+      }
+    }
   }
 }
 
