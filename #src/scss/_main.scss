@@ -7,6 +7,8 @@
   }
   &__statistics {
   }
+  &__about {
+  }
 }
 
 // entry block
@@ -453,6 +455,7 @@
 
 .statistics {
   background-color: $beigeColor;
+
   &__container {
   }
   &__body {
@@ -518,4 +521,198 @@
     }
   }
 }
+// --------------------------------------- //
+
+// about block
+
+.about {
+  margin: 130px 0px 130px 0px;
+  @media screen and (max-width: 769px) {
+    margin: 80px 0px 80px 0px;
+  }
+  &__container {
+  }
+  &__inner {
+  }
+  &__item {
+    &:not(:last-child) {
+      margin: 0px 0px 130px 0px;
+      @media screen and (max-width: 791px) {
+        margin: 0px 0px 100px 0px;
+      }
+      @media screen and (max-width: 593px) {
+        margin: 0px 0px 50px 0px;
+      }
+    }
+  }
+}
+.item-shop {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 593px) {
+      display: block;
+    }
+  }
+  &__info {
+    margin-right: 32px;
+    flex: 0 1 50%;
+    @media screen and (max-width: 593px) {
+      margin-right: 0px;
+    }
+    @media screen and (max-width: 593px) {
+      background: url("../img/pages/about/shopinfoOp3.png") top center no-repeat;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+  &__heading {
+    max-width: 520px;
+
+    @media screen and (max-width: 1067px) {
+      font-size: 40px;
+      max-width: 320px;
+    }
+    @media screen and (max-width: 593px) {
+      max-width: none;
+      text-align: center;
+      margin: 0px 0px 30px 0px;
+      font-size: 30px;
+    }
+    @media screen and (max-width: 419px) {
+      margin: 0px 0px 10px 0px;
+      font-size: 21.5px;
+    }
+  }
+  &__text {
+    max-width: 608px;
+    margin: 20px 0px 50px 0px;
+    @media screen and (max-width: 791px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 593px) {
+      max-width: none;
+      text-align: center;
+    }
+    @media screen and (max-width: 419px) {
+      font-size: 13px;
+    }
+  }
+  &__button {
+    padding: 18px 28.5px;
+    @media screen and (max-width: 791px) {
+      display: block;
+      border-radius: 10px;
+    }
+  }
+  &__link {
+  }
+  &__img {
+    max-width: 600px;
+    flex: 0 1 50%;
+    & img {
+      width: 100%;
+    }
+    @media screen and (max-width: 593px) {
+      display: none;
+    }
+  }
+}
+.item-product {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 584px) {
+      display: block;
+    }
+  }
+  &__img {
+    flex: 0 1 50%;
+    max-width: 583px;
+    & img {
+      width: 100%;
+    }
+    @media screen and (max-width: 584px) {
+      display: none;
+    }
+  }
+  &__info {
+    flex: 0 1 50%;
+    margin: 0px 0px 0px 37px;
+    @media screen and (max-width: 584px) {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  &__heading {
+    margin: 0px 0px 12px 0px;
+    @media screen and (max-width: 584px) {
+      font-size: 25px;
+    }
+  }
+  &__rating {
+    margin: 0px 0px 43px 0px;
+    display: flex;
+
+    & img {
+      margin-right: 12px;
+    }
+  }
+  &__text {
+    margin: 0px 0px 79px 0px;
+    max-width: 625px;
+    padding-right: 10px;
+    @media screen and (max-width: 769px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 584px) {
+      margin: 0px 0px 39px 0px;
+      font-size: 16px;
+    }
+    &::before {
+      content: "";
+      height: 50px;
+      width: 50px;
+      padding-left: 25px;
+      background: url("../img/icons/quote-open.svg") top center no-repeat;
+    }
+    &::after {
+      content: "";
+      height: 50px;
+      width: 50px;
+      padding-left: 25px;
+      background: url("../img/icons/quote-closed.svg") top center no-repeat;
+    }
+  }
+  &__person {
+  }
+}
+.product-person {
+  @media screen and (max-width: 584px) {
+    text-align: center;
+  }
+  &__fullName {
+    margin: 0px 0px 10px 0px;
+    @media screen and (max-width: 584px) {
+      font-size: 25px;
+    }
+  }
+  &__profession {
+    margin: 0px 0px 22px 0px;
+    @media screen and (max-width: 584px) {
+      font-size: 15px;
+    }
+  }
+  &__arrows {
+    display: flex;
+    @media screen and (max-width: 584px) {
+      justify-content: center;
+    }
+  }
+  &__arrow-left {
+    margin-right: 20px;
+  }
+  &__arrow-right {
+  }
+}
+
 // --------------------------------------- //
