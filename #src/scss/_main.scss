@@ -5,6 +5,8 @@
   }
   &__product {
   }
+  &__statistics {
+  }
 }
 
 // entry block
@@ -445,4 +447,75 @@
   }
 }
 
+// --------------------------------------- //
+
+// statistics block
+
+.statistics {
+  background-color: $beigeColor;
+  &__container {
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 75px;
+    @media screen and (max-width: 600px) {
+      & {
+        display: block;
+        padding: 38px 0px;
+      }
+    }
+  }
+  &__item {
+    text-align: center;
+    @media screen and (max-width: 600px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__label {
+    display: inline-block;
+    font-weight: 600;
+    border-bottom: 4px solid #000000;
+    @media screen and (max-width: 900px) {
+      & {
+        font-size: 50px;
+      }
+    }
+    @media screen and (max-width: 769px) {
+      & {
+        font-size: 40px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      & {
+        font-size: 30px;
+      }
+    }
+  }
+  &__text {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 125%;
+    @media screen and (max-width: 900px) {
+      & {
+        font-size: 20px;
+        margin-top: 26px;
+      }
+    }
+    @media screen and (max-width: 769px) {
+      & {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      & {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
 // --------------------------------------- //
