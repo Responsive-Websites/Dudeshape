@@ -9,6 +9,8 @@
   }
   &__about {
   }
+  &__subscribe {
+  }
 }
 
 // entry block
@@ -715,4 +717,103 @@
   }
 }
 
+// --------------------------------------- //
+
+// subscribe block
+
+.subscribe {
+  background-color: $grayColorSecond;
+
+  margin-bottom: 100px;
+  @media screen and (max-width: 954px) {
+    & {
+      border-bottom: 1px solid $grayColor;
+    }
+  }
+  &__container {
+  }
+  &__body {
+    padding: 103px 0px 59px 0px;
+    border-bottom: 1px solid $grayColor;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 954px) {
+      & {
+        display: block;
+        padding: 73px 0px 39px 0px;
+        border-bottom: none;
+      }
+    }
+    @media screen and (max-width: 439px) {
+      & {
+        padding: 33px 0px 29px 0px;
+      }
+    }
+  }
+  &__heading {
+    padding-right: 15px;
+
+    @media screen and (max-width: 1040px) {
+      & h3 {
+        font-size: 30px;
+      }
+    }
+    @media screen and (max-width: 954px) {
+      & {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    @media screen and (max-width: 536px) {
+      & h3 {
+        font-size: 25px;
+      }
+    }
+    @media screen and (max-width: 439px) {
+      & h3 {
+        font-size: 20px;
+      }
+    }
+    @media screen and (max-width: 363px) {
+      & h3 {
+        font-size: 17px;
+      }
+    }
+  }
+  &__form {
+    flex: 0 1 386px;
+    @media screen and (max-width: 954px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.form-subscribe {
+  &__body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+  }
+  &__input {
+    font-size: 16px;
+    line-height: 125%;
+    padding-left: 18px;
+    @media screen and (max-width: 954px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+  &__button {
+    margin-right: 8px;
+    font-size: 14px;
+    padding: 10px 19px;
+    line-height: 142%;
+  }
+  &__link {
+  }
+}
 // --------------------------------------- //

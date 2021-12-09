@@ -194,6 +194,12 @@ h2 {
   line-height: 125%;
 }
 
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 127%;
+}
+
 h4 {
   font-size: 30px;
   line-height: 133%;
@@ -696,6 +702,56 @@ h4 {
   margin-right: 20px;
 }
 
+.subscribe {
+  background-color: #fafafa;
+  margin-bottom: 100px;
+}
+
+.subscribe__body {
+  padding: 103px 0px 59px 0px;
+  border-bottom: 1px solid #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscribe__heading {
+  padding-right: 15px;
+}
+
+.subscribe__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 386px;
+          flex: 0 1 386px;
+}
+
+.form-subscribe__body {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 0px;
+}
+
+.form-subscribe__input {
+  font-size: 16px;
+  line-height: 125%;
+  padding-left: 18px;
+}
+
+.form-subscribe__button {
+  margin-right: 8px;
+  font-size: 14px;
+  padding: 10px 19px;
+  line-height: 142%;
+}
+
 @media screen and (max-width: 1067px) {
   .item-shop__heading {
     font-size: 40px;
@@ -722,6 +778,12 @@ h4 {
   }
 }
 
+@media screen and (max-width: 1040px) {
+  .subscribe__heading h3 {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .entry__body {
     background: url("../img/pages/main-block/mainBack.png") center/contain no-repeat;
@@ -737,6 +799,31 @@ h4 {
     display: block;
     text-align: center;
     margin: 30px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  .subscribe {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .subscribe__body {
+    display: block;
+    padding: 73px 0px 39px 0px;
+    border-bottom: none;
+  }
+
+  .subscribe__heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .subscribe__form {
+    width: 100%;
+  }
+
+  .form-subscribe__input {
+    width: 100%;
   }
 }
 
@@ -1047,6 +1134,12 @@ h4 {
   }
 }
 
+@media screen and (max-width: 536px) {
+  .subscribe__heading h3 {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 481px) {
   .entry__heading {
     padding: 35px 0px 40px 0px;
@@ -1081,6 +1174,16 @@ h4 {
     font-size: 30px;
     padding: 0px 0px 0px 0px;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .subscribe__body {
+    padding: 33px 0px 29px 0px;
+  }
+
+  .subscribe__heading h3 {
+    font-size: 20px;
   }
 }
 
@@ -1119,6 +1222,12 @@ h4 {
 
   .partners__item img {
     width: 50px;
+  }
+}
+
+@media screen and (max-width: 363px) {
+  .subscribe__heading h3 {
+    font-size: 17px;
   }
 }
 
