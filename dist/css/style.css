@@ -1056,6 +1056,10 @@ h4 {
     margin-bottom: 25px;
   }
 
+  .entry__body {
+    background: url("../img/pages/main-block/mainBackOp.png") center/contain no-repeat;
+  }
+
   .entry__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1076,6 +1080,7 @@ h4 {
   .entry__text {
     margin: 0 auto 30px auto;
     text-align: center;
+    color: #222222;
   }
 
   .entry__form {
@@ -1430,6 +1435,11 @@ h4 {
 @media screen and (max-width: 1025px) {
 
   .webp .entry__body { background: url(../img/pages/main-block/mainBack.webp) center/contain no-repeat; }
+}
+
+@media screen and (max-width: 769px) {
+
+  .webp .entry__body { background: url(../img/pages/main-block/mainBackOp.webp) center/contain no-repeat; }
 }
 
 @media screen and (max-width: 593px) {
