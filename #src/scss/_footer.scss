@@ -106,6 +106,9 @@
   }
   &__link {
     color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .footer-miniHeading {
@@ -135,5 +138,8 @@
     display: block;
     margin-bottom: 20px;
     color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

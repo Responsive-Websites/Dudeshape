@@ -21,9 +21,14 @@
   }
   &__body {
     background: url("../img/pages/main-block/mainBack.png") top right no-repeat;
+    @media screen and (max-width: 1185px) {
+      & {
+        background: url("../img/pages/main-block/mainBackOp.png") top right no-repeat;
+      }
+    }
     @media screen and (max-width: 1025px) {
       & {
-        background: url("../img/pages/main-block/mainBack.png") center / contain no-repeat;
+        background: url("../img/pages/main-block/mainBackOp.png") center / contain no-repeat;
       }
     }
     @media screen and (max-width: 769px) {
@@ -295,6 +300,9 @@
       & {
         font-size: 18px;
       }
+    }
+    &:hover {
+      text-decoration: underline;
     }
   }
   &__examples {
