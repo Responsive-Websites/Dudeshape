@@ -1,1 +1,1 @@
-https://github.com/Responsive-Websites-LIVE/Dudeshape-LIVE - LIVE
+https://responsive-websites-live.github.io/Dudeshape-LIVE/ - LIVE
